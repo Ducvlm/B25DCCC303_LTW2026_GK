@@ -1,0 +1,118 @@
+/* Thiết lập font chữ chung cho toàn trang */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Định dạng thanh menu (NavBar) */
+nav {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* Định dạng thẻ <a> đang được chọn (Active) - Đề bài bắt buộc */
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+/* Định dạng bảng danh sách (TaskTable) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Hiệu ứng hover cho từng dòng trong bảng - Đề bài bắt buộc */
+.task-row:hover {
+  background-color: #f9f9f9;
+}
+
+/* Định dạng các liên kết trong bảng */
+td a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Định dạng Form thêm mới (AddTask) */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0052a3;
+}
+
+/* Nút xóa trong bảng */
+td button:last-child {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+td button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Khoảng cách cho thanh tìm kiếm và lọc */
+.filter-bar {
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  margin-right: 20px;
+}
